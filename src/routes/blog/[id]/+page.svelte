@@ -100,19 +100,4 @@
         display: flex;
         gap: 10px;
     }
-
-    button {
-        outline: none;
-        border: none;
-        color: white;
-        background-color: gray;
-        padding: 10px 15px;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    button:hover {
-        transition-duration: 1s;
-        background-color: rgb(47, 46, 46);
-    }
 </style>
