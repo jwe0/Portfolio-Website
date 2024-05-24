@@ -75,6 +75,24 @@
     }
 
 
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 20px;
+        width: 600px;
+        text-align: center;
+    }
+
+    li:hover {
+        background-color: rgb(47, 46, 46);
+        animation: up-bump 0.5s ease-in-out;
+    }
+
+
 
 
 </style>
@@ -88,6 +106,7 @@
         <h1>Joshua Webb</h1>
         
     </div>
+
         <div class="top_container">
             <button on:click={() => window.location.href = "https://only-my.space/jwe0"}>Only My Space</button>
             <button on:click={() => window.location.href = "https://app.daily.dev/fbidotgov"}>Daily.dev</button>
@@ -100,10 +119,18 @@
     </div>
 
     <div class="main animated-element-2">
-        <h1>Hello there</h1>
-        <h1>I'm Joshua Webb a python and rust developer</h1>
+        <h1>Contact information</h1>
+        <p>Email</p>
+        <ul>
+            <li>joshuawebb2007@proton.me (preffered)</li>
+            <li>joshuawebb2007@icloud.com (not preffered)</li>
+            <li>jwe0.gov@gmail.com (last resort)</li>
+        </ul>
 
-        <img src="https://github-readme-stats.vercel.app/api?username=jwe0&theme=dark&hide_border=false&include_all_commits=false&count_private=false" alt="Stats">
-    
+        <p>Phone</p>
+        <ul>
+            <li>+44 07406 166093</li>
+        </ul>
+        
     </div>
 </body>

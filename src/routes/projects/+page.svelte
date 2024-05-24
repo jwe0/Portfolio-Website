@@ -99,6 +99,7 @@
             <button on:click={() => window.location.href = "https://play.picoctf.org/users/jwe0"}>Pico Ctf</button>
             <button on:click={() => window.location.href = "https://github.com/jwe0"}>Github</button>
             <button on:click={() => window.location.href = "/blog"}>Blog</button>
+            <button on:click={() => window.location.href = "/contact"}>Contact</button>
         </div> 
     </div>
 
