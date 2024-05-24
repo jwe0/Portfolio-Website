@@ -76,49 +76,6 @@
 </body>
 
 <style>
-    body {
-        background-color: black;
-        color: white;
-        font-family: poppins, sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .topbar {
-        width: 100vw;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        background-color: rgb(47, 46, 46);
-    }
-
-    .topbar h1 {
-        margin: 0;
-    }
-
-    .title {
-        display: flex;
-        align-items: center;
-    }
-
-    .title img {
-        width: 50px;
-        height: 50px;
-        margin-right: 10px;
-        border-radius: 50%;
-    }
-
-    .top_container {
-        display: flex;
-        gap: 10px;
-    }
-
-
     .main {
         display: flex;
         justify-content: center;
