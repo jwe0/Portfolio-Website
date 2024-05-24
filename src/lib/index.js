@@ -2,7 +2,7 @@ const posts = {
     "Hello World": {
         title: "Hello World",
         textContent: `
-        <p>Hi everyone! I'm [Your Name], and I'm excited to start sharing my thoughts, experiences, and passions with you. In this first post, I want to tell you about myself, my education, what I hope to achieve, my hobbies, and what you can expect from this blog.</p>
+        <p>Hi everyone! I'm Joshua Webb, and I'm excited to start sharing my thoughts, experiences, and passions with you. In this first post, I want to tell you about myself, my education, what I hope to achieve, my hobbies, and what you can expect from this blog.</p>
 
         <h3>1. Who I Am:</h3>
         <p>I love coding! I enjoy making websites and working with Python and Rust. Coding is not just a job for me; it's a way to solve problems and bring ideas to life.</p>
