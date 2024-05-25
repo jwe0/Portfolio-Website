@@ -21,4 +21,36 @@ const posts = {
     },
 }
 
-export { posts }
+const pages = {
+    "OMS" : {
+        name : "Only My Space",
+        url : "https://only-my.space/jwe0"
+    },
+    "Daily.dev" : {
+        name : "Daily.dev",
+        url : "https://app.daily.dev/fbidotgov"
+    },
+    "Pico Ctf" : {
+        name : "Pico Ctf",
+        url : "https://play.picoctf.org/users/jwe0"
+    },
+    "Projects" : {
+        name : "Projects",
+        url : "/projects"
+    },
+    "Blog" : {
+        name : "Blog",
+        url : "/blog"
+    },
+    "Github" : {
+        name : "Github",
+        url : "https://github.com/jwe0"
+    },
+    "Contact" : {
+        name : "Contact",
+        url : "/contact"
+    },
+
+}
+
+export { posts, pages }

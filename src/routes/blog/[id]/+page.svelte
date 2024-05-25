@@ -1,6 +1,8 @@
 <script>
     import { page } from "$app/stores";
-    import { posts } from "$lib/index";
+    import { posts, pages } from "$lib/index";
+
+    const _pages = Object.keys(pages).map((key) => pages[key]);
 </script>
 
 <head>
@@ -21,43 +23,44 @@
         </div>
 
         <div class="top_container">
-            <button
-                on:click={() =>
-                    (window.location.href = "https://only-my.space/jwe0")}
-                >Only My Space</button
-            >
-            <button
-                on:click={() =>
-                    (window.location.href = "https://app.daily.dev/fbidotgov")}
-                >Daily.dev</button
-            >
-            <button on:click={() => (window.location.href = "/projects")}
-                >Projects</button
-            >
-            <button
-                on:click={() =>
-                    (window.location.href =
-                        "https://play.picoctf.org/users/jwe0")}>Pico Ctf</button
-            >
-            <button
-                on:click={() =>
-                    (window.location.href = "https://github.com/jwe0")}
-                >Github</button
-            >
-            <button on:click={() => (window.location.href = "/blog")}
-                >Blog</button
-            >
-            <button on:click={() => (window.location.href = "/contact")}
-                >Contact</button
-            >
+            {#each _pages as page}
+                <button on:click={() => (window.location.href = page.url)}
+                    >{page.name}</button
+                >
+            {/each}
         </div>
     </div>
 
-    <h1>{posts[$page.params.id]["title"]}</h1>
+    <h1 class="blog_title">{posts[$page.params.id]["title"]}</h1>
 
-    {@html posts[$page.params.id]["textContent"]}
-</body>
+    <div class="blog">
+        {@html posts[$page.params.id]["textContent"]}
+    </div></body
+>
 
 <style>
+    .blog {
+        color: rgb(175, 175, 175);
+        background-color: rgb(55, 55, 55);
+        width: 600px;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px;
+    }
 
+    .blog_title {
+        color: rgb(175, 175, 175);
+        background-color: rgb(55, 55, 55);
+        border-radius: 10px;
+        padding: 20px 50px;
+        margin: 20px;
+    }
+
+    .codeblock {
+        background-color: rgb(56, 56, 56);
+        color: black;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px;
+    }
 </style>

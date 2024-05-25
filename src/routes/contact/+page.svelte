@@ -1,5 +1,8 @@
 <script>
     import "/src/style.css";
+    import { pages } from "$lib/index";
+
+    const _pages = Object.keys(pages).map((key) => pages[key]);
 </script>
 
 <head>
@@ -20,35 +23,12 @@
         </div>
 
         <div class="top_container">
-            <button
-                on:click={() =>
-                    (window.location.href = "https://only-my.space/jwe0")}
-                >Only My Space</button
-            >
-            <button
-                on:click={() =>
-                    (window.location.href = "https://app.daily.dev/fbidotgov")}
-                >Daily.dev</button
-            >
-            <button on:click={() => (window.location.href = "/projects")}
-                >Projects</button
-            >
-            <button
-                on:click={() =>
-                    (window.location.href =
-                        "https://play.picoctf.org/users/jwe0")}>Pico Ctf</button
-            >
-            <button
-                on:click={() =>
-                    (window.location.href = "https://github.com/jwe0")}
-                >Github</button
-            >
-            <button on:click={() => (window.location.href = "/blog")}
-                >Blog</button
-            >
-            <button on:click={() => (window.location.href = "/contact")}
-                >Contact</button
-            >
+            {#each _pages as page}
+                <button
+                    on:click={() => (window.location.href = page.url)}
+                    >{page.name}</button
+                >
+            {/each}
         </div>
     </div>
 
