@@ -49,7 +49,7 @@
     }
 
     .blog_title {
-        color: rgb(175, 175, 175);
+        color: rgb(255, 255, 255);
         background-color: rgb(55, 55, 55);
         border-radius: 10px;
         padding: 20px 50px;
