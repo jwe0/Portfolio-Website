@@ -1,15 +1,6 @@
 <script>
     import "/src/style.css";
     import { pages } from "$lib/index";
-    import { onMount } from "svelte";
-
-    let _pages = []
-
-    function get_pages() {
-        _pages = Object.keys(pages).map((key) => pages[key]);
-    }
-
-    onMount(get_pages);
 
 </script>
 
@@ -30,7 +21,7 @@
             <h1>Joshua Webb</h1>
         </div>
         <div class="top_container">
-            {#each _pages as page}
+            {#each pages as page}
                 <button
                     on:click={() => (window.location.href = page.url)}
                     >{page.name}</button

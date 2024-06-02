@@ -1,7 +1,7 @@
 <script>
     import "/src/style.css";
     import { pages } from "$lib/index";
-
+    import { socials } from "$lib/index";
 </script>
 
 <head>
@@ -20,11 +20,9 @@
 
             <h1>Joshua Webb</h1>
         </div>
-
         <div class="top_container">
             {#each pages as page}
-                <button
-                    on:click={() => (window.location.href = page.url)}
+                <button on:click={() => (window.location.href = page.url)}
                     >{page.name}</button
                 >
             {/each}
@@ -32,20 +30,20 @@
     </div>
 
     <div class="main animated-element-2">
-        <h1>Contact information</h1>
-        <p>Email</p>
-        <ul>
-            <li>joshuawebb2007@proton.me (preffered)</li>
-            <li>joshuawebb2007@icloud.com (not preffered)</li>
-            <li>jwe0.gov@gmail.com (last resort)</li>
-        </ul>
+        <div class="main">
+            <ul>
+                {#each socials as social}
+                    <li on:click={() => (window.location.href = social.url)}>
+                        {social.name}
+                    </li>
+                    <br />
+                {/each}
 
-        <p>Phone</p>
-        <ul>
-            <li>+44 07406 166093</li>
-        </ul>
-    </div>
-</body>
+                <div></div>
+            </ul>
+        </div>
+    </div></body
+>
 
 <style>
     .main {

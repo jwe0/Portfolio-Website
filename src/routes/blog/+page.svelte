@@ -3,7 +3,6 @@
     import { onMount } from "svelte";
     import "/src/style.css";
 
-    const _pages = Object.keys(pages).map((key) => pages[key]);
 
     let postlist = [];
 
@@ -33,7 +32,7 @@
             <h1>Joshua Webb</h1>
         </div>
         <div class="top_container">
-            {#each _pages as page}
+            {#each pages as page}
                 <button
                     on:click={() => (window.location.href = page.url)}
                     >{page.name}</button

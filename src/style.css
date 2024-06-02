@@ -40,19 +40,17 @@ body {
 
 button {
   outline: none;
-  border: none;
+  border: white 1px solid;
   color: white;
-  background-color: gray;
+  background-color: rgb(53, 53, 53);
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 3px;
   cursor: pointer;
-
-
 }
 
 button:hover {
   transition-duration: 1s;
-  background-color: rgb(47, 46, 46);
+  background-color: rgb(87, 87, 87);
 }
 
 .topbar {

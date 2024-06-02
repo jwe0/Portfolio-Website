@@ -2,7 +2,6 @@
     import { page } from "$app/stores";
     import { posts, pages } from "$lib/index";
 
-    const _pages = Object.keys(pages).map((key) => pages[key]);
 </script>
 
 <head>
@@ -23,7 +22,7 @@
         </div>
 
         <div class="top_container">
-            {#each _pages as page}
+            {#each pages as page}
                 <button on:click={() => (window.location.href = page.url)}
                     >{page.name}</button
                 >
