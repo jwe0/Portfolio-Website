@@ -35,4 +35,12 @@ const socials = [
     {name : "Github", url : "https://github.com/jwe0"}
 ]
 
-export { posts, pages, socials }
+const files = {
+    "Forage-AIG": {
+        name: "Forage-AIG",
+        path: "/2ZFnEGEDKTQMtEv9C_AIG_q4qNRnSiANMrJvzgq_1717420676260_completion_certificate.pdf"
+    }
+};
+
+
+export { posts, pages, socials, files }
