@@ -32,7 +32,8 @@ const socials = [
     {name : "Only My Space", url : "https://only-my.space/jwe0"},
     {name : "Daily.dev", url : "https://app.daily.dev/fbidotgov"},
     {name : "Pico Ctf", url : "https://play.picoctf.org/users/jwe0"},
-    {name : "Github", url : "https://github.com/jwe0"}
+    {name : "Github", url : "https://github.com/jwe0"},
+    {name : "TryHackMe", url : "https://tryhackme.com/p/jwe0"}
 ]
 
 const files = {
