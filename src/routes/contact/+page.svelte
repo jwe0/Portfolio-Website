@@ -35,14 +35,7 @@
         <h1>Contact information</h1>
         <p>Email</p>
         <ul>
-            <li>joshuawebb2007@proton.me (preffered)</li>
-            <li>joshuawebb2007@icloud.com (not preffered)</li>
-            <li>jwe0.gov@gmail.com (last resort)</li>
-        </ul>
-
-        <p>Phone</p>
-        <ul>
-            <li>+44 07406 166093</li>
+            <li>joshuawebb2007@proton.me</li>
         </ul>
     </div>
 </body>
