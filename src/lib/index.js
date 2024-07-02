@@ -33,7 +33,8 @@ const socials = [
     {name : "Daily.dev", url : "https://app.daily.dev/fbidotgov"},
     {name : "Pico Ctf", url : "https://play.picoctf.org/users/jwe0"},
     {name : "Github", url : "https://github.com/jwe0"},
-    {name : "TryHackMe", url : "https://tryhackme.com/p/jwe0"}
+    {name : "TryHackMe", url : "https://tryhackme.com/p/jwe0"},
+    {name : "YouTube", url : "https://youtube.com/@jwe016"}
 ]
 
 const files = {
