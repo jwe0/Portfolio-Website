@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div class="topbar animated-element-1">
+    <div class="topbar">
         <div class="title">
             <div class="icon">
                 <a href="/"

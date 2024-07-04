@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="topbar animated-element-1">
+    <div class="topbar">
         <div class="title">
             <a href="/"
                 ><img
@@ -29,7 +29,7 @@
         </div>
     </div>
 
-    <div class="main animated-element-2">
+    <div class="main">
         <div class="main">
             <ul>
                 {#each socials as social}
@@ -68,7 +68,7 @@
     }
 
     li:hover {
-        background-color: rgb(47, 46, 46);
-        animation: up-bump 0.5s ease-in-out;
+        transform: scale(1.1); /* Increase size by 10% */
+        transition-duration: 100ms;
     }
 </style>

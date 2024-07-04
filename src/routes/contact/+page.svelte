@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="topbar animated-element-1">
+    <div class="topbar">
         <div class="title">
             <a href="/"
                 ><img
@@ -31,7 +31,7 @@
         </div>
     </div>
 
-    <div class="main animated-element-2">
+    <div class="main">
         <h1>Contact information</h1>
         <p>Email</p>
         <ul>

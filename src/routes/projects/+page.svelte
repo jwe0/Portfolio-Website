@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="topbar animated-element-1">
+    <div class="topbar">
         <div class="title">
             <a href="/"
                 ><img
@@ -33,7 +33,7 @@
 
     <br /><br />
 
-    <div class="project animated-element-2">
+    <div class="project">
         <h1>Pymanager</h1>
         <p><u>Secure password manager</u></p>
 
@@ -51,7 +51,7 @@
         >
     </div>
 
-    <div class="project animated-element-1">
+    <div class="project">
         <h1>Portfolio</h1>
         <p><u>My personal portfolio</u></p>
 
@@ -64,7 +64,7 @@
         </ul>
     </div>
 
-    <div class="project animated-element-2">
+    <div class="project">
         <h1>Mage</h1>
         <p><u>Profile link osint</u></p>
 
@@ -82,7 +82,7 @@
         >
     </div>
 
-    <div class="project animated-element-1">
+    <div class="project">
         <h1>Warlock</h1>
         <p><u>Username enumerter</u></p>
 
