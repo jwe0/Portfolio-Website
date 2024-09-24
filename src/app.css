@@ -108,3 +108,12 @@ body {
     color: #FFFFFF;
     transform: translateY(-2px);
 }
+
+.dots {
+    background-image: radial-gradient(circle at 20px 20px, rgb(138, 138, 138) 1px, transparent 0);
+    background-size: 90px 90px;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
