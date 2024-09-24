@@ -1,69 +1,31 @@
 <script>
-    import "/src/style.css";
-    import { pages } from "$lib/index";
-
+    import "/src/app.css";
+    import { pages} from "$lib/index";
 </script>
 
-<head>
-    <title>Joshua Webb</title>
-</head>
 
 <body>
-    <div class="topbar">
-        <div class="title">
-            <a href="/"
-                ><img
-                    src="https://avatars.githubusercontent.com/u/162640629"
-                    alt="Logo"
-                /></a
-            >
-
-            <h1>Joshua Webb</h1>
-        </div>
-
-        <div class="top_container">
+    <div class="navbar">
+        <ul>
             {#each pages as page}
-                <button
-                    on:click={() => (window.location.href = page.url)}
-                    >{page.name}</button
-                >
+                {#if page.align == "left"}
+                    <li>
+                        <a href={page.path}>{page.name}</a>
+                    </li>
+                {:else}
+                    <li class="right">
+                        <a href={page.path}>{page.name}</a>
+                    </li>
+                {/if}
             {/each}
-        </div>
+        </ul>
     </div>
 
     <div class="main">
-        <h1>Contact information</h1>
-        <p>Email</p>
-        <ul>
-            <li>joshuawebb2007@proton.me</li>
-        </ul>
+        <h1>Contact</h1>
+        <p>Where to contact me</p>
+        <div class="socials">
+            <a href="mailto:joshuawebb2007@proton.me">joshuawebb2007@proton.me</a>
+        </div>
     </div>
 </body>
-
-<style>
-    .main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-size: large;
-        padding: 20px;
-    }
-
-    li {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        border: 1px solid white;
-        border-radius: 5px;
-        padding: 20px;
-        margin: 20px;
-        width: 600px;
-        text-align: center;
-    }
-
-    li:hover {
-        background-color: rgb(47, 46, 46);
-        animation: up-bump 0.5s ease-in-out;
-    }
-</style>

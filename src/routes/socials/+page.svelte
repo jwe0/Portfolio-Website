@@ -1,74 +1,33 @@
 <script>
-    import "/src/style.css";
-    import { pages } from "$lib/index";
-    import { socials } from "$lib/index";
+    import "/src/app.css";
+    import { pages, socials } from "$lib/index";
 </script>
 
-<head>
-    <title>Joshua Webb</title>
-</head>
 
 <body>
-    <div class="topbar">
-        <div class="title">
-            <a href="/"
-                ><img
-                    src="https://avatars.githubusercontent.com/u/162640629"
-                    alt="Logo"
-                /></a
-            >
-
-            <h1>Joshua Webb</h1>
-        </div>
-        <div class="top_container">
+    <div class="navbar">
+        <ul>
             {#each pages as page}
-                <button on:click={() => (window.location.href = page.url)}
-                    >{page.name}</button
-                >
+                {#if page.align == "left"}
+                    <li>
+                        <a href={page.path}>{page.name}</a>
+                    </li>
+                {:else}
+                    <li class="right">
+                        <a href={page.path}>{page.name}</a>
+                    </li>
+                {/if}
             {/each}
-        </div>
+        </ul>
     </div>
 
     <div class="main">
-        <div class="main">
-            <ul>
-                {#each socials as social}
-                    <li on:click={() => (window.location.href = social.url)}>
-                        {social.name}
-                    </li>
-                    <br />
-                {/each}
-
-                <div></div>
-            </ul>
+        <h1>Socials</h1>
+        <p>Here are some of the sites you can find me on</p>
+        <div class="socials">
+            {#each socials as social}
+                <a href={social.url}>{social.name}</a>
+            {/each}
         </div>
-    </div></body
->
-
-<style>
-    .main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-size: large;
-        padding: 20px;
-    }
-
-    li {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        border: 1px solid white;
-        border-radius: 5px;
-        padding: 20px;
-        margin: 20px;
-        width: 600px;
-        text-align: center;
-    }
-
-    li:hover {
-        transform: scale(1.1); /* Increase size by 10% */
-        transition-duration: 100ms;
-    }
-</style>
+    </div>
+</body>

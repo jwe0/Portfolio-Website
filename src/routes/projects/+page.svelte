@@ -1,112 +1,37 @@
 <script>
-    import "/src/style.css";
-    import { pages } from "$lib/index.js";
-
+    import "/src/app.css";
+    import { pages, projects } from "$lib/index";
 </script>
 
-<head>
-    <title>Joshua Webb</title>
-</head>
 
 <body>
-    <div class="topbar">
-        <div class="title">
-            <a href="/"
-                ><img
-                    src="https://avatars.githubusercontent.com/u/162640629"
-                    alt="Logo"
-                /></a
-            >
-
-            <h1>Joshua Webb</h1>
-        </div>
-
-        <div class="top_container">
+    <div class="navbar">
+        <ul>
             {#each pages as page}
-                <button
-                    on:click={() => (window.location.href = page.url)}
-                    >{page.name}</button
-                >
+                {#if page.align == "left"}
+                    <li>
+                        <a href={page.path}>{page.name}</a>
+                    </li>
+                {:else}
+                    <li class="right">
+                        <a href={page.path}>{page.name}</a>
+                    </li>
+                {/if}
+            {/each}
+        </ul>
+    </div>
+    <div class="main">
+        <h1>Projects</h1>
+        <p>Here are some of the projects I have worked on</p>
+        <div class="boxes">
+            {#each projects as project}
+                <a href={project.path}>
+                    <div class="box">
+                        <h1 class="title">{project.name}</h1>
+                        <p>{project.description}</p>
+                    </div>
+                </a>
             {/each}
         </div>
-    </div>
-
-    <br /><br />
-
-    <div class="project">
-        <h1>Pymanager</h1>
-        <p><u>Secure password manager</u></p>
-
-        <ul>
-            <li>AES CBC Encryption</li>
-            <li>SQLite Database</li>
-            <li>Flask Framework Webui</li>
-            <li>Import from other password managers</li>
-        </ul>
-
-        <button
-            on:click={() =>
-                (window.location.href = "https://github.com/jwe0/Pymanage")}
-            >Github</button
-        >
-    </div>
-
-    <div class="project">
-        <h1>Portfolio</h1>
-        <p><u>My personal portfolio</u></p>
-
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Svelte</li>
-            <li>Nodejs</li>
-        </ul>
-    </div>
-
-    <div class="project">
-        <h1>Mage</h1>
-        <p><u>Profile link osint</u></p>
-
-        <ul>
-            <li>Scrapes popular link hosts</li>
-            <li>Python</li>
-            <li>Threading</li>
-            <li>Enumerate extra information</li>
-        </ul>
-
-        <button
-            on:click={() =>
-                (window.location.href = "https://github.com/jwe0/Mage")}
-            >Github</button
-        >
-    </div>
-
-    <div class="project">
-        <h1>Warlock</h1>
-        <p><u>Username enumerter</u></p>
-
-        <ul>
-            <li>Python</li>
-            <li>Threading</li>
-            <li>Enumerate extra information</li>
-            <li>Custom site lists</li>
-        </ul>
-    </div>
+        
 </body>
-
-<style>
-    .project {
-        text-align: center;
-        border: 1px solid white;
-        border-radius: 5px;
-        padding: 20px;
-        margin: 20px;
-        width: 600px;
-    }
-
-    .project ul {
-        list-style-type: none;
-        padding: 0;
-    }
-</style>
