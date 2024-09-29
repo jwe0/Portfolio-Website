@@ -23,15 +23,9 @@
     <div class="main">
         <h1>Projects</h1>
         <p>Here are some of the projects I have worked on</p>
-        <div class="boxes">
-            {#each projects as project}
-                <a href={project.path}>
-                    <div class="box">
-                        <h1 class="title">{project.name}</h1>
-                        <p>{project.description}</p>
-                    </div>
-                </a>
+        <div class="socials">
+            {#each projects as project, i}
+                <a href="/projects/{i}">{project.info.name}</a>
             {/each}
         </div>
-        
 </body>

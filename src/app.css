@@ -117,3 +117,8 @@ body {
     height: 100vh;
     z-index: -1;
 }
+
+.project {
+    border-radius: 2px solid white;
+    width: 50%
+}

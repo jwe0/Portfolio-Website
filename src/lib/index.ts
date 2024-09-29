@@ -28,14 +28,36 @@ const pages = [
 
 const projects = [
     {
-        name: "Osint.Kit",
-        description: "This is an Osint focused tool I developed because I found when I was performing Osint investigations that I constantly needed to download a new tool or visit a website and I prefer working purely from the command line so I created this tool.",
-        url: "https://github.com/jwe0/osint.kit"
+        info : {
+            name: "Osint.Kit",
+            url: "https://github.com/jwe0/osint.kit"
+        },
+        page : {
+            title: "Osint.Kit",
+            description: "This is an Osint focused tool I developed because I found when I was performing Osint investigations that I constantly needed to download a new tool or visit a website and I prefer working purely from the command line so I created this tool.",
+            features : [
+                "30+ tools",
+                "Easy to use",
+                "Open source",
+                "Works from the command line",
+                "Efficient and fast"
+            ]
+        }
     },
     {
-        name : "AutoPen",
-        description: "This is a tool I developed to automate basic penetration testing like finding protocols, banners, software versions and common file paths.",
-        url: "https://github.com/jwe0/AutoPen"
+        info : {
+            name : "AutoPen",
+            url: "https://github.com/jwe0/AutoPen"
+        },
+        page : {
+            title: "AutoPen",
+            description: "This is a tool I developed to automate basic penetration testing like finding protocols, banners, software versions and common file paths.",
+            features : [
+                "Easy to use",
+                "Open source",
+                "Automates basic penetration testing"
+            ]
+        }
     }
 ]
 
@@ -63,4 +85,5 @@ const socials = [
 ]
 
 
-export { pages, projects, socials }
+
+export { pages, projects, socials}
