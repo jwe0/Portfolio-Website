@@ -3,6 +3,9 @@
     import { pages } from "$lib/index";
 </script>
 
+<head>
+    <title>Joshua Webb</title>
+</head>
 
 <body>
     <div class="dots">

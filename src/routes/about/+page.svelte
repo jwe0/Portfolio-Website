@@ -3,6 +3,9 @@
     import { pages } from "$lib/index";
 </script>
 
+<head>
+    <title>About</title>
+</head>
 
 <body>
     <div class="navbar">

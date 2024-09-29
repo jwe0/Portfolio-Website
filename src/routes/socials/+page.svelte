@@ -3,6 +3,9 @@
     import { pages, socials } from "$lib/index";
 </script>
 
+<head>
+    <title>Socials</title>
+</head>
 
 <body>
     <div class="navbar">

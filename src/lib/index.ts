@@ -35,6 +35,14 @@ const projects = [
         page : {
             title: "Osint.Kit",
             description: "This is an Osint focused tool I developed because I found when I was performing Osint investigations that I constantly needed to download a new tool or visit a website and I prefer working purely from the command line so I created this tool.",
+            elements : [
+                {
+                    type: "image",
+                    url: "/osintkit.png",
+                    alt : "Osint.Kit",
+                    height: "300px"
+                }
+            ],
             features : [
                 "30+ tools",
                 "Easy to use",
@@ -52,6 +60,9 @@ const projects = [
         page : {
             title: "AutoPen",
             description: "This is a tool I developed to automate basic penetration testing like finding protocols, banners, software versions and common file paths.",
+            elements : [
+                
+            ],
             features : [
                 "Easy to use",
                 "Open source",
