@@ -23,6 +23,11 @@ const pages = [
         name: "Contact",
         path: "/contact",
         align: "right"
+    },
+    {
+        name: "Blog",
+        path: "/blog",
+        align: "left"
     }
 ]
 
@@ -72,6 +77,29 @@ const projects = [
     }
 ]
 
+const blogs = [
+    {
+        info: {
+            name: "Welcome!"
+        },
+        page : {
+            title : "Welcome!",
+            description : "This is my personal blog. I will be adding new posts as I learn more about web development and programming. Stay tuned!",
+            elements : [
+                {
+                    title : "Random code",
+                    type: "text",
+                    content: "Have some random code so I can test the code feature"
+                },
+                {
+                    type: "code",
+                    content: "print('Hello World!')"
+                }
+            ]
+        }
+    }
+]
+
 const socials = [
     {
         name: "OnlyMySpace",
@@ -97,4 +125,4 @@ const socials = [
 
 
 
-export { pages, projects, socials}
+export { pages, projects, socials, blogs }
