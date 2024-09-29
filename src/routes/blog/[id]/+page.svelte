@@ -42,6 +42,8 @@
                 {:else if element.type == "text"}
                     <h1>{element.title}</h1>
                     <p>{element.content}</p>
+                {:else if element.type == "paragraph"}
+                    <p>{element.content}</p>
                 {:else if element.type == "link"}
                     <a href={element.url}>{element.content}</a>
                 {:else if element.type == "code"}

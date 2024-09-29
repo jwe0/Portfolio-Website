@@ -24,9 +24,9 @@
         </ul>
     </div>
     <div class="main">
-        <h1>blogs</h1>
+        <h1>Blogs</h1>
         <p>Here are some of the blogs I have worked on</p>
-        <div class="socials">
+        <div class="blogs">
             {#each blogs as project, i}
                 <a href="/blog/{i}">{project.info.name}</a>
             {/each}

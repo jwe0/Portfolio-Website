@@ -122,3 +122,29 @@ body {
     border-radius: 2px solid white;
     width: 50%
 }
+
+.blogs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.blogs a {
+    background-color: #1f1f1f;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 500px;
+    padding: 10px;
+    color: #E0E0E0;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.blogs a:hover {
+    background-color: #292929; 
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}

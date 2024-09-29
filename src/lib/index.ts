@@ -87,14 +87,143 @@ const blogs = [
             description : "This is my personal blog. I will be adding new posts as I learn more about web development and programming. Stay tuned!",
             elements : [
                 {
-                    title : "Random code",
                     type: "text",
+                    title : "Random code",
                     content: "Have some random code so I can test the code feature"
                 },
                 {
                     type: "code",
                     content: "print('Hello World!')"
                 }
+            ]
+        }
+    },
+    {
+        info: {
+            name: "My favorite function I've ever made"
+        },
+        page : {
+            title : "My favorite function I've ever made",
+            description : "There is a certain format I love when it comes to CLIs and it is surprisingly difficult to achieve.",
+            elements : [
+                {
+                    type: "text",
+                    title : "The concept",
+                    content: "In simple, I love when in user interfaces with multiple options that the index of it is on the left and it goes down from 1-10 then the next column is 11-20 etc. I also like it when everything is padded correctly. Like this:"
+                },
+                {
+                    type: "image",
+                    url: "/osintkit.png",
+                },
+                {
+                    type: "paragraph",
+                    content: "This may look simple but by default it goes 1-10 in rows not columns so I had to sort the options into an array in chunks of 10 then print all the columns first row at the same time then all the columns second row at the same time etc"
+                },
+                {
+                    type: "code",
+                    content: `def columnit(array, size=10):
+    def style(array):
+        results = []
+        for ar in array:
+            results.append(f"[{array.index(ar) + 1}] {ar}")
+        return results
+    def pad(array, size=10):
+        while len(array) % size != 0:
+            array.append(" ")
+        return array
+    def gen_pad(array):
+        results = []
+        for ar in array:
+            pad = max(len(x) for x in ar)
+            sub = []
+            for x in ar:
+                sub.append(x.ljust(pad))
+            results.append(sub)
+        return results
+    array = pad(style(array), size)
+    result = []
+    message = ""
+    for i in range(0, len(array), size):
+        result.append(array[i:i + size])
+    sub = ""
+    result = gen_pad(result)
+    for i in range(len(result[0])):
+        for j in range(len(result)):
+            if j > 0:
+                sub += f" {Fore.LIGHTBLACK_EX}|{Fore.RESET} "
+            sub += result[j][i]
+        message += sub + "\\n"
+        sub = ""
+    return message`
+            },
+            {
+                type: "text",
+                title: "Array styling",
+                content: "The first step was to add the index to each item before sorting."
+            },
+            {
+                type: "code",
+                content: `    def style(array):
+        results = []
+        for ar in array:
+            results.append(f"[{array.index(ar) + 1}] {ar}")
+        return results`
+            },
+            {
+                type: "text",
+                title: "Padding",
+                content: "The next step was to pad each column to the same length using modulo operators."
+            },
+            {
+                type: "code",
+                content: `    def pad(array, size=10):
+        while len(array) % size != 0:
+            array.append(" ")
+        return array`
+            },
+            {
+                type: "text",
+                title: "Padding generator",
+                content: "The final step was to create a padding function to generate the padding for each column so everything was aligned nicely."
+            },
+            {
+                type: "code",
+                content: `    def gen_pad(array):
+        results = []
+        for ar in array:
+            pad = max(len(x) for x in ar)
+            sub = []
+            for x in ar:
+                sub.append(x.ljust(pad))
+            results.append(sub)
+        return results`
+            },
+            {
+                type: "text",
+                title: "Column generator",
+                content: "The final step was to create a function to generate the columns for each row by reading each columns first row then the second row and so on."
+            },
+            {
+                type: "code",
+                content : `    sub = ""
+    result = gen_pad(result)
+    for i in range(len(result[0])):
+        for j in range(len(result)):
+            if j > 0:
+                sub += f" {Fore.LIGHTBLACK_EX}|{Fore.RESET} "
+            sub += result[j][i]
+        message += sub + "\\n"
+        sub = ""`
+            },
+            {
+                type: "text",
+                title: "Result",
+                content: "The result was a clean and neat table."
+            },
+            {
+                type: "image",
+                url: "/osintkit.png",
+            }
             ]
         }
     }
