@@ -1,7 +1,18 @@
 <script>
+    import { onMount } from 'svelte';
     import "/src/app.css";
+
+    import 'prismjs/themes/prism-tomorrow.css';
+    import Prism from 'prismjs';
+    import 'prismjs/components/prism-python';
+    
     import { page } from "$app/stores";
     import { blogs } from "$lib/index";
+    
+    onMount(() => {
+      Prism.highlightAll();
+   });
+
     let blog = blogs[$page.params.id];
 </script>
 
@@ -34,7 +45,7 @@
                 {:else if element.type == "link"}
                     <a href={element.url}>{element.content}</a>
                 {:else if element.type == "code"}
-                    <pre>{element.content}</pre>
+                    <pre><code class="language-python">{element.content}</code></pre>
                 {/if}
             {/each}
         </div>
@@ -43,15 +54,6 @@
 
 <style>
     pre {
-        background-color: #2e3440;
-        color: #d8dee9;
-        padding: 15px;
-        border-radius: 8px;
-        font-family: 'Courier New', monospace;
-        font-size: 14px;
-        line-height: 1.5;
-        overflow-x: auto;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        white-space: pre-wrap;
+        border-radius: 5px;
     }
 </style>
