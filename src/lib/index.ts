@@ -35,7 +35,8 @@ const projects = [
     {
         info : {
             name: "Osint.Kit",
-            url: "https://github.com/jwe0/osint.kit"
+            url: "https://github.com/jwe0/osint.kit",
+            shortd: "Osint toolkit"
         },
         page : {
             title: "Osint.Kit",
@@ -60,7 +61,8 @@ const projects = [
     {
         info : {
             name : "AutoPen",
-            url: "https://github.com/jwe0/AutoPen"
+            url: "https://github.com/jwe0/AutoPen",
+            shortd: "Automated penetration testing tool"
         },
         page : {
             title: "AutoPen",
@@ -80,7 +82,8 @@ const projects = [
 const blogs = [
     {
         info: {
-            name: "Welcome!"
+            name: "Welcome!",
+            date: "2024-09-28"
         },
         page : {
             title : "Welcome!",
@@ -100,7 +103,8 @@ const blogs = [
     },
     {
         info: {
-            name: "My favorite function I've ever made"
+            name: "My favorite function I've ever made",
+            date: "2024-09-30"
         },
         page : {
             title : "My favorite function I've ever made",

@@ -25,10 +25,13 @@
     </div>
     <div class="main">
         <h1>Blogs</h1>
-        <p>Here are some of the blogs I have worked on</p>
+        <p>This is a list of my blogs</p>
         <div class="blogs">
             {#each blogs as project, i}
-                <a href="/blog/{i}">{project.info.name}</a>
+                <a href="/blog/{i}">
+                    <p style="float: right;">{i + 1}</p>
+                    <p style="float: left;">{project.info.name}</p>
+                </a>
             {/each}
         </div>
 </body>
