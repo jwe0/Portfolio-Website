@@ -26,9 +26,12 @@
     <div class="main">
         <h1>Projects</h1>
         <p>Here are some of the projects I have worked on</p>
-        <div class="socials">
+        <div class="cool_list">
             {#each projects as project, i}
-                <a href="/projects/{i}">{project.info.name}</a>
+            <div class="item" on:click={() => window.location.href = "/projects/" + i}>
+                <h1 class="title">{project.info.name}</h1>
+                <p class="description">{project.info.shortd}</p>
+            </div>
             {/each}
         </div>
 </body>

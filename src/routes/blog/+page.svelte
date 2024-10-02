@@ -26,12 +26,11 @@
     <div class="main">
         <h1>Blogs</h1>
         <p>This is a list of my blogs</p>
-        <div class="blogs">
+        <div class="cool_list">
             {#each blogs as project, i}
-                <a href="/blog/{i}">
-                    <p style="float: right;">{i + 1}</p>
-                    <p style="float: left;">{project.info.name}</p>
-                </a>
+                <div class="item" on:click={() => window.location.href = "/blog/" + i}>
+                    <h1 class="title">{project.page.title}</h1>
+                </div>
             {/each}
         </div>
 </body>

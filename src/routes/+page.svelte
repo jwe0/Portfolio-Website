@@ -28,6 +28,7 @@
         <div class="main">
             <h1>Joshua Webb</h1>
             <p>16 year old software engineer</p>
+            <h5>"that's how you turn a 5 hour task into a 1 and a half month task, because i'm a programmer, and that's what we do."</h5>
         </div>
     </div>
 
