@@ -230,6 +230,73 @@ const blogs = [
             }
             ]
         }
+    },
+    {
+        info: {
+            name: "How git repositories can Dox you.",
+            date: "2024-09-28"
+        },
+        page : {
+            title: "How git repositories can Dox you.",
+            description : "In this post I show how git repositories can lead to your dox.",
+            elements : [
+                {
+                    type: "text",
+                    title: "How does it work?",
+                    content: "All git repositories contain a Git log that can be accessed with the command `git log`. When your first make a push using the git client it requires your email address, this is a legitmate feature that allows collaboraters to contact the member of a certain push if needed. However an email address can allow an attacker to check your email in a data breach and possibly gain access to your email."
+                },
+                {
+                    type: "code",
+                    content : "git log | grep @ | cut -d' ' -f3 | tr -d '><'"
+                },
+                {
+                    type: "paragraph",
+                    content : "The result"
+                },
+                {
+                    type: "code",
+                    content: `jwe0@epic.x
+jwe0@epic.x
+jwe0@epic.x
+jwe0@epic.x
+jwe0@epic.x
+jwe0@epic.x
+jwe0@epic.x
+jwe0@epic.x
+jwe0@epic.x
+jwe0@epic.x
+jwe0@epic.x
+jwe0@epic.x
+Webb
+Webb
+Webb
+jwe0@fbi.gov
+jwe0@fbi.gov
+jwe0@fbi.gov
+jwe0@fbi.gov
+jwe0@fbi.gov
+jwe0@fbi.gov
+jwe0@fbi.gov
+jwe0@fbi.gov
+jwe0@fbi.gov
+jwe0@fbi.gov
+jwe0@fbi.gov
+jwe0@fbi.gov
+jwe0@fbi.gov
+jwe0@fbi.gov
+`
+                },                
+                {
+                    type: "paragraph",
+                    content: "As you can see this clearly shows all the emails in your repository. An attacker could check what websites the email is connceted to and search your email in a database and then attempt the resulting password on multiple websites."
+                },
+                {
+                    type: "text",
+                    title: "The solution",
+                    content : "Thankfully this is very easy to circumvent by using an email mask or providing an email dedicated to complaints and push requests."
+                }
+            ]
+        }
     }
 ]
 
