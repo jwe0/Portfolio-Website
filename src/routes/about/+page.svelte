@@ -1,6 +1,6 @@
 <script>
     import "/src/app.css";
-    import { pages } from "$lib/index";
+    import { pages, badges, stacks } from "$lib/index";
 </script>
 
 <head>
@@ -45,26 +45,25 @@
         </div>
         <div class="stat_row">
             <h1 class="title">My stacks</h1>
-            <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/python.svg" width="50" alt="Python"> 
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" width="50" alt="Node.js">
-            <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/svelte-icon.svg" width="50" alt="Svelte"> 
-            <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/html-5.svg" width="50" alt="HTML"> 
-            <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/css-3.svg" width="50" alt="CSS"> 
-            <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/javascript.svg" width="50" alt="Javascript"> 
-            <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/git.svg" width="130" alt="Git"> 
-            <img style="background-color: white;" src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/flask.svg" width="50" alt="Flask"> 
-            <img style="background-color: white;" src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/rust.svg" width="50" alt="Rust"> 
-            <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/linux-tux.svg" width="50" alt="Linux"> 
-            <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/ubuntu.svg" width="50" alt="Ubuntu">
+            <div class="statboxroot">
+                {#each stacks as stack}
+                    <div class="statbox">
+                        <img src={stack.url} width="{stack.width}" alt={stack.name}>
+                        <p>{stack.name}</p>
+                    </div>         
+                {/each}
+            </div>
         </div>
         <div class="stat_row">
             <h1 class="title">THM Badges</h1>
-            <img src="https://assets.tryhackme.com/img/badges/firstfour.svg" alt="THM Badges" width="60">
-            <img src="https://assets.tryhackme.com/img/badges/linux.svg" alt="THM Badges" width="60">
-            <img src="https://assets.tryhackme.com/img/badges/webbed.svg" alt="THM Badges" width="60">
-            <img src="https://assets.tryhackme.com/img/badges/howthewebworks.svg" alt="THM Badges" width="60">
-            <img src="https://assets.tryhackme.com/img/badges/mrrobot.svg" alt="THM Badges" width="60">
-            <img src="https://assets.tryhackme.com/img/badges/ohsint.svg" alt="THM Badges" width="60">
+            <div class="statboxroot">
+                {#each badges as badge}
+                    <div class="statbox">
+                        <img src={badge.url} width="50" alt={badge.name}>
+                        <p>{badge.name}</p>    
+                    </div>
+                {/each}
+            </div>
         </div>
     </div>
 </body>

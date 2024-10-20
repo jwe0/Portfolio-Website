@@ -207,8 +207,29 @@ body {
     text-align: center;
 }
 
-.stat_row img:hover {
-    cursor: pointer;
+.statboxroot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+.stat_row .statbox {
+    background-color: #292929;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 70px;
+    padding: 10px;
+    color: #E0E0E0;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.stat_row .statbox:hover {
+    background-color: #1f1f1f; 
+    color: #FFFFFF;
     transform: translateY(-2px);
 }
 

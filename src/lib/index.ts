@@ -323,6 +323,89 @@ const socials = [
     }
 ]
 
+const badges = [
+    {
+        name : "First 4",
+        url : "https://assets.tryhackme.com/img/badges/firstfour.svg"
+    },
+    {
+        name : "Linux",
+        url : "https://assets.tryhackme.com/img/badges/linux.svg"
+    },
+    {
+        name : "Webbed",
+        url : "https://assets.tryhackme.com/img/badges/webbed.svg"
+    },
+    {
+        name : "WWW",
+        url : "https://assets.tryhackme.com/img/badges/howthewebworks.svg"
+    },
+    {
+        name : "MrRobot",
+        url : "https://assets.tryhackme.com/img/badges/mrrobot.svg"
+    },
+    {
+        name : "OhSint",
+        url : "https://assets.tryhackme.com/img/badges/ohsint.svg"
+    }
+]
 
+const stacks = [
+    {
+        name : "Python",
+        url : "https://raw.githubusercontent.com/get-icon/geticon/master/icons/python.svg",
+        width : 50
+    },
+    {
+        name : "Node.js",
+        url : "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
+        width : 50
+    },
+    {
+        name : "Svelte",
+        url : "https://raw.githubusercontent.com/get-icon/geticon/master/icons/svelte-icon.svg",
+        width : 50
+    },
+    {
+        name : "HTML",
+        url : "https://raw.githubusercontent.com/get-icon/geticon/master/icons/html-5.svg",
+        width : 50
+    },
+    {
+        name : "CSS",
+        url : "https://raw.githubusercontent.com/get-icon/geticon/master/icons/css-3.svg",
+        width : 50
+    },
+    {
+        name : "JavaScript",
+        url : "https://raw.githubusercontent.com/get-icon/geticon/master/icons/javascript.svg",
+        width : 50
+    },
+    {
+        name : "Git",
+        url : "https://raw.githubusercontent.com/get-icon/geticon/master/icons/git.svg",
+        width : 50
+    },
+    {
+        name : "Flask",
+        url : "https://raw.githubusercontent.com/get-icon/geticon/master/icons/flask.svg",
+        width : 50
+    },
+    {
+        name : "Rust",
+        url : "https://raw.githubusercontent.com/get-icon/geticon/master/icons/rust.svg",
+        width : 50
+    },
+    {
+        name : "Linux",
+        url : "https://raw.githubusercontent.com/get-icon/geticon/master/icons/linux-tux.svg",
+        width : 50
+    },
+    {
+        name : "Ubuntu",
+        url : "https://raw.githubusercontent.com/get-icon/geticon/master/icons/ubuntu.svg",
+        width : 50
+    }
+] 
 
-export { pages, projects, socials, blogs }
+export { pages, projects, socials, blogs, badges, stacks }
