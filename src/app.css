@@ -184,3 +184,33 @@ body {
 .cool_list .item .title {
     font-size: 20px;
 }
+
+.stat_row {
+    background-color: #1f1f1f;
+    border-radius: 5px;
+    width: 100%px;
+    padding: 10px;
+    color: #E0E0E0;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    margin-bottom: 10px;
+}
+
+.stat_row:hover {
+    background-color: #292929; 
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+.stat_row .title {
+    text-align: center;
+}
+
+.stat_row .item {
+}
+
+.stat_row img:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}

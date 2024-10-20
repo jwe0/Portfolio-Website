@@ -43,10 +43,10 @@
                 <p>My programming background has honed my problem-solving abilities. I enjoy deconstructing complex problems into manageable parts and often explore multiple solutions to ensure the best outcome.</p>
             </div>
         </div>
-        <p>Here are some of the technologies I have used:</p>
-        <div class="stacks svelte-muvu6j">
-            <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/python.svg" width="50" alt="Python">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" width="50" alt="Node.js"> 
+        <div class="stat_row">
+            <h1 class="title">My stacks</h1>
+            <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/python.svg" width="50" alt="Python"> 
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" width="50" alt="Node.js">
             <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/svelte-icon.svg" width="50" alt="Svelte"> 
             <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/html-5.svg" width="50" alt="HTML"> 
             <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/css-3.svg" width="50" alt="CSS"> 
@@ -57,9 +57,14 @@
             <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/linux-tux.svg" width="50" alt="Linux"> 
             <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/ubuntu.svg" width="50" alt="Ubuntu">
         </div>
-        <p>My GitHub rating</p>
-        <img src="https://github-readme-stats.vercel.app/api?username=jwe0&show_icons=true&theme=tokyonight" alt="GitHub stats">
-        <p>My most used languages</p>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=jwe0&show_icons=true&theme=tokyonight" alt="GitHub stats">
+        <div class="stat_row">
+            <h1 class="title">THM Badges</h1>
+            <img src="https://assets.tryhackme.com/img/badges/firstfour.svg" alt="THM Badges" width="60">
+            <img src="https://assets.tryhackme.com/img/badges/linux.svg" alt="THM Badges" width="60">
+            <img src="https://assets.tryhackme.com/img/badges/webbed.svg" alt="THM Badges" width="60">
+            <img src="https://assets.tryhackme.com/img/badges/howthewebworks.svg" alt="THM Badges" width="60">
+            <img src="https://assets.tryhackme.com/img/badges/mrrobot.svg" alt="THM Badges" width="60">
+            <img src="https://assets.tryhackme.com/img/badges/ohsint.svg" alt="THM Badges" width="60">
+        </div>
     </div>
 </body>
