@@ -207,10 +207,37 @@ body {
     text-align: center;
 }
 
-.stat_row .item {
-}
-
 .stat_row img:hover {
     cursor: pointer;
     transform: translateY(-2px);
+}
+
+.aboutme_home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+.aboutme_home .box {
+    background-color: #1f1f1f;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    padding: 10px;
+    color: #E0E0E0;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+    height: 70vh;
 }
