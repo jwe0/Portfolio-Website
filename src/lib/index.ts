@@ -383,7 +383,7 @@ const stacks = [
     },
     {
         name : "Git",
-        url : "https://raw.githubusercontent.com/get-icon/geticon/master/icons/git.svg",
+        url : "https://raw.githubusercontent.com/get-icon/geticon/master/icons/git-icon.svg",
         width : 50
     },
     {
