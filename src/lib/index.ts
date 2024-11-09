@@ -83,7 +83,8 @@ const blogs = [
     {
         info: {
             name: "Welcome!",
-            date: "2024-09-28"
+            date: "2024-09-28",
+            type: "general"
         },
         page : {
             title : "Welcome!",
@@ -104,7 +105,8 @@ const blogs = [
     {
         info: {
             name: "My favorite function I've ever made",
-            date: "2024-09-30"
+            date: "2024-09-30",
+            type: "general"
         },
         page : {
             title : "My favorite function I've ever made",
@@ -234,7 +236,8 @@ const blogs = [
     {
         info: {
             name: "How git repositories can Dox you.",
-            date: "2024-09-28"
+            date: "2024-09-28",
+            type: "general"
         },
         page : {
             title: "How git repositories can Dox you.",
@@ -297,6 +300,91 @@ jwe0@fbi.gov
                 }
             ]
         }
+    },
+    {
+        info: {
+            name: "THM Anonforce",
+            date: "2024-11-06",
+            type: "writeup",
+        },
+        page : {
+            title: "THM Anonforce",
+            description : "This is a writeup for the Anonforce challenge on Try Hack Me",
+            elements : [
+                {
+                    type: "text",
+                    title: "Introduction",
+                    content: "Anon force is a boot 2 root room on Try Hack me this means it is designed to be loaded up and then 'rooted' (gaining root access). This is a room classed as easy because of its simplicity"
+                },
+                {
+                    type: "text",
+                    title: "Stage 1.",
+                    content: "After recieving the target machines IP address I performed and NMAP scan on it with a service switch (-sV) to find the services currently running on the targets server."
+                },
+                {
+                    type: "image",
+                    url: "/anonforce/nmap.png"
+                },
+                {
+                    type: "paragraph",
+                    content: "I discovered that port 21 and 22 are open which are FTP and SSH ports so I knew we where probably going to have to hack the ssh server."
+                },
+                {
+                    type: "text",
+                    title: "Stage 2.",
+                    content: "I decided to root the FTP server first. I attempted an anonymous login using the username anonymous and password anonymous, this is a common attack used against unsecured ftp servers to login without needing an account."
+                },
+                {
+                    type: "image",
+                    url: "/anonforce/ftpanon.png"
+                },
+                {
+                    type: "paragraph",
+                    content: "As you can see I managed to get access and there seems to be some interesting files here. Located in the /home/melodias is a file called 'user.txt' which is one of the files we need"
+                },
+                {
+                    type: "image",
+                    url : "/anonforce/ftphome.png"
+                },
+                {
+                    type: "paragraph",
+                    content: "After downloading this file I got contents that resembled a hash",
+                },
+                {
+                    type: "image",
+                    url : "/anonforce/userhash.png"
+                },
+                {
+                    type: "paragraph",
+                    content: "I decided to look this hash up and managed to de hash it."
+                },
+                {
+                    type: "image",
+                    url : "/anonforce/uhashpw.png"
+                },
+                {
+                    type: "paragraph",
+                    content: "There was also a folder called 'notread' which contained a backup.gpg and private.asc file which I found interesting so I downloaded them to my local machine."
+                },
+                {
+                    type: "image",
+                    url : "/anonforce/notread.png"
+                },
+                {
+                    type: "text",
+                    title: "Stage 3.",
+                    content: "From here it was time to start hacking the SSH server I knew that this backup.gpg file and the private.asc file were required here."
+                },
+                {
+                    type: "paragraph",
+                    content: "I used a tool called gp2john to convert the gpg file to a hash which I can then bruteforce with john the ripper"
+                },
+                {
+                    type: "image",
+                    url : "/anonforce/gpghash.png"
+                }
+            ]
+        }
     }
 ]
 
@@ -347,6 +435,10 @@ const badges = [
     {
         name : "OhSint",
         url : "https://assets.tryhackme.com/img/badges/ohsint.svg"
+    },
+    {
+        name : "Career Ready",
+        url : "https://assets.tryhackme.com/img/badges/careerready.svg"
     }
 ]
 
