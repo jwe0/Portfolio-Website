@@ -439,6 +439,10 @@ const badges = [
     {
         name : "Career Ready",
         url : "https://assets.tryhackme.com/img/badges/careerready.svg"
+    },
+    {
+        name : "7 Day Streak",
+        url : "https://assets.tryhackme.com/img/badges/streak7.svg"
     }
 ]
 
