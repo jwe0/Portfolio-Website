@@ -186,6 +186,38 @@ body {
     font-size: 20px;
 }
 
+.cool_list .item {
+    position: relative;
+}
+
+.cool_list .item .writeup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 70px;
+    background-color: #4A90E2;
+    border-radius: 0 5px 5px 0;
+}
+
+.cool_list .item .general {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 70px;
+    background-color: #e24a4a;
+    border-radius: 5px;
+}
+
 .stat_row {
     background-color: #1f1f1f;
     border-radius: 5px;

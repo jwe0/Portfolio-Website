@@ -28,9 +28,14 @@
         <p>This is a list of my blogs</p>
         <div class="cool_list">
             {#each blogs as project, i}
-                <div class="item" on:click={() => window.location.href = "/blog/" + i}>
-                    <h1 class="title">{project.page.title}</h1>
-                </div>
+            <div class="item" on:click={() => window.location.href = "/blog/" + i}>
+                <h1 class="title">{project.page.title}</h1>
+                {#if project.info.type == "writeup"}
+                    <div class="writeup">Writeup</div>
+                {:else if project.info.type == "general"}
+                    <div class="general">General</div>
+                {/if}
+            </div>
             {/each}
         </div>
 </body>
