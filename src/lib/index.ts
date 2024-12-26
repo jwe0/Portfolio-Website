@@ -443,6 +443,10 @@ const badges = [
     {
         name : "7 Day Streak",
         url : "https://assets.tryhackme.com/img/badges/streak7.svg"
+    },
+    {
+        name : "Advent of Cyber 2024",
+        url : "https://assets.tryhackme.com/img/badges/aoc5.svg"
     }
 ]
 
